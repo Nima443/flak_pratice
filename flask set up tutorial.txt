@@ -1,0 +1,18 @@
+pip install virtualenv
+
+virtualenv env (to avoid hit installed python on pc we are creating safe playable env)
+
+source env/bin/activate   
+
+python3 app.py (to run programme)
+
+
+Git Hub 
+
+first initilize git on required folder
+
+git init
+
+git remote -v  --- to check any existing remote
+
+git remote add origin (git repository link)  to add a remotly. we can use any thing instead of origin but origin is generally used

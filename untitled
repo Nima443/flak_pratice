@@ -1,0 +1,20 @@
+<VirtualHost *:80>
+    ServerName localhost
+    DocumentRoot "Applications/XAMPP/xamppfiles/htdocs"
+    <Directory "Applications/XAMPP/xamppfiles/htdocs">
+	Options Indexes FollwSymlinks Includes execCGI
+	AllowOverride All
+        Require all granted  
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName www.flaskpraticedev.com
+    DocumentRoot "/Users/ngeemalama/desktop/flask_pratice"
+    <Directory "/Users/ngeemalama/desktop/flask_pratice">
+	Options Indexes FollwSymlinks Includes execCGI
+	AllowOverride All
+        Require all granted  
+    </Directory>
+    ErrorLog "logs/www.flaskpraticedev.com-error_log"
+</VirtualHost>
